@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.container.closed {
+    transform: translateX(-100%);
+}
+
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+.sidebar-item-content {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.sidebar-title {
+    flex-grow: 1;
+    text-align: start;
+}
+
+.children {
+    padding-left: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: max-height 0.3s ease-out;
+}
+
+.children.open {
+    max-height: 500px;
+    /* Adjust this value based on the expected maximum height */
+}
+
+.toggle-button {
+    position: fixed;
+    border: none;
+    border-radius: 3px;
+    top: 10px;
+    left: 10px;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    z-index: 101;
+    transition: left 0.3s ease;
+}
+
+.container.closed+.toggle-button {
+    left: 10px;
+}
+
+.container:not(.closed)+.toggle-button {
+    left: 260px;
+    /* 250px (sidebar width) + 10px (gap) */
+}

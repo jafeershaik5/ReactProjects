@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Home",
+    "icon": "HomeRounded"
+  },
+  {
+    "title": "Dashboard",
+    "icon": "DashboardRounded"
+  },
+  {
+    "title": "About",
+    "icon": "InfoRounded"
+  },
+  {
+    "title": "Contact",
+    "icon": "PhoneAndroidRounded",
+    "children": [
+      {
+        "title": "Contact 1",
+        "icon": "PhoneAndroidRounded"
+      },
+      {
+        "title": "Contact 2",
+        "icon": "PhoneAndroidRounded"
+      },
+      {
+        "title": "Contact 3",
+        "icon": "PhoneAndroidRounded"
+      }
+    ]
+  },
+  {
+    "title": "User",
+    "icon": "AccountCircleRounded"
+  }
+]

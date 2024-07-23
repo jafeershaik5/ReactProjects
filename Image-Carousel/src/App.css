@@ -1,0 +1,50 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 350px;
+  width: 500px;
+  object-fit: contain;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+}
+
+.container {
+  height: 350px;
+  width: 500px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.active {
+  opacity: 1;
+}
+
+.left-btn,
+.right-btn {
+  position: absolute;
+  top: 50%;
+  padding: 0.5rem;
+  background-color: rgba(108, 109, 76, 0.851);
+  z-index: 1;
+}
+
+.left-btn {
+  left: 1rem;
+}
+
+.right-btn {
+  right: 1rem;
+} */
